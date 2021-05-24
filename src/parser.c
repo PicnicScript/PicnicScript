@@ -40,7 +40,7 @@ void parser_start( TokenList *list, const char *source)
         i++;
     }
 }
-int parser_get_number(const char* buf){
+uint32_t parser_get_number(const char* buf){
     char num_buf [strlen(buf) - 1];
 }
 TokenInst parser_get_inst(const char* buf){
