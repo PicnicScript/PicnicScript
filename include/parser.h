@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "token.h"
-
+#include <limits.h>
 enum _ParserStatus {
     SUCCESS,
     SYNTAX_ERROR
