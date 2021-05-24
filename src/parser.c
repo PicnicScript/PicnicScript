@@ -1,7 +1,7 @@
 #include "../include/parser.h"
 #include <stdlib.h>
 
-void parser_start( TokenList *list, const char *source)
+void parser_start(TokenList* list, const char* source)
 {
     char lex[256];
     int lexi = 0;
