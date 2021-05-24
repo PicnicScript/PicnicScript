@@ -43,6 +43,7 @@ void parser_start( TokenList *list, const char *source)
 }
 uint32_t parser_get_number( char* buf){
     long num = atoi(&buf[1]);
+    return (num <= sizeof(uint32_t)) ? num : 0;
 }
 TokenInst parser_get_inst(const char* buf){
     if(strcmp(buf, "push") == 0){
