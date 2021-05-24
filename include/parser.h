@@ -1,6 +1,7 @@
 #ifndef PICNIC_PARSER_H
 #define PICNIC_PARSER_H
 #include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include "token.h"
