@@ -1,0 +1,8 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.html": "html",
+        "util.h": "c",
+        "token.h": "c"
+    }
+}
