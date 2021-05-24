@@ -5,13 +5,15 @@
 #include <stdint.h>
 #include "token.h"
 #include <limits.h>
+
 enum _ParserStatus {
-    SUCCESS,
-    SYNTAX_ERROR
+    PARSER_SUCCESS,
+    PARSER_SYNTAX_ERROR
 };
+
 typedef enum _ParserStatus ParserStatus;
 
-void parser_start(TokenList** list,const char* source);
+ParserStatus parser_start(TokenList* list,const char* source);
  int parser_get_number(const char* buf);
  TokenInst parser_get_inst(const char* buf);
 
