@@ -19,5 +19,5 @@ void token_list_add(TokenList* list, Token* tok){
    list->data[list->ptr] = tok;
 }
 Token* token_list_get(TokenList* list, int index){
-
+    return list->data[index];
 }
