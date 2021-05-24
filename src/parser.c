@@ -40,6 +40,7 @@ void parser_start(TokenList* list, const char* source)
         lexi = 0;
         i++;
     }
+    return PARSER_SUCCESS;
 }
 uint32_t parser_get_number( char* buf){
     long num = atoi(&buf[1]);
