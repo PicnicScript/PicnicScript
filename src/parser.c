@@ -1,4 +1,5 @@
 #include "../include/parser.h"
+#include <stdlib.h>
 
 void parser_start( TokenList *list, const char *source)
 {
@@ -40,12 +41,8 @@ void parser_start( TokenList *list, const char *source)
         i++;
     }
 }
-uint32_t parser_get_number(const char* buf){
-    int len = strlen(buf) - 1;
-    char num_buf[len];
-    for (int i = 0; i <strlen(buf) - 1; i++){
-        num_buf[i]=buf[i + 1];
-    }
+uint32_t parser_get_number( char* buf){
+    long num = atoi(&buf[1]);
 }
 TokenInst parser_get_inst(const char* buf){
     if(strcmp(buf, "push") == 0){
