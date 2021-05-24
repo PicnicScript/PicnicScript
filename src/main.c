@@ -16,9 +16,11 @@ int main(int argc, char** argv){
         char* source = read_ascii_file(argv[2]);
         TokenList tokens;
         ParserStatus pstat = parser_start(&tokens, source);
-        
+        if(pstat != PARSER_SUCCESS){
+            return 1;
+            free(source);
+        }
         //free(tokens);
-        free(source);
     }
     return 0;
 }

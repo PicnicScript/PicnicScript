@@ -27,7 +27,7 @@ void parser_start( TokenList *list, const char *source)
                    token_list_add(list, token_create(INST, inst, line));
             }else{
                 printf("Syntax error: no such instruction '%s'\n",lex);
-                return;
+                return PARSER_SYNTAX_ERROR;
             }
         }
         if(source[i] == '\n'){
