@@ -19,7 +19,7 @@ struct _Token {
 };
 typedef struct _Token Token;
 
-Token* create_token(int type, int data, int line);
+Token* token_create(int type, int data, int line);
 void token_destroy(Token* tok);
 
 struct _TokenList {

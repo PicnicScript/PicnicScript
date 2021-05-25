@@ -18,6 +18,10 @@ int main(int argc, char** argv){
         ParserStatus pstat = parser_start(&tokens, source);
         if(pstat != PARSER_SUCCESS){
             return 1;
+
+            for(int i=0;i< tokens.ptr; i++){
+                
+            }
             free(source);
         }
         //free(tokens);

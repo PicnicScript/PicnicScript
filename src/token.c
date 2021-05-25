@@ -16,7 +16,7 @@ void token_list_add(TokenList* list, Token* tok){
         list->size *= 2;
         list->data = (Token**) realloc(list->data, sizeof(Token**) * list->size);
     }
-   list->data[list->ptr] = tok;
+   list->data[list->ptr++] = tok;
 }
 Token* token_list_get(TokenList* list, int index){
     return list->data[index];
