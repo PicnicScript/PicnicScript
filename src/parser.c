@@ -23,7 +23,7 @@ ParserStatus parser_start(TokenList* list, const char* source)
         }
         else{
             int inst = parser_get_inst(lex);
-            if(inst <= 0){
+            if(inst >= 0){
                    token_list_add(list, token_create(INST, inst, line));
             }else{
                 printf("Syntax error: no such instruction '%s'\n",lex);
@@ -42,7 +42,7 @@ ParserStatus parser_start(TokenList* list, const char* source)
     }
     return PARSER_SUCCESS;
 }
-uint32_t parser_get_number( char* buf){
+uint32_t parser_get_number(const char* buf){
     long num = atoi(&buf[1]);
     return (num <= UINT32_MAX) ? num : 0;
 }
