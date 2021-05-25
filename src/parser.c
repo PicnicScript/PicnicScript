@@ -9,7 +9,7 @@ ParserStatus parser_start(TokenList* list, const char* source)
     int line = 1;
     while (1)
     {
-        memset(lex, '\0', 256);
+        //memset(lex, '\0', 256);
         while (source[i] != ' ' && source[i] != '\n' && source[i] != '\0')
         {
             lex[lexi++] = source[i++];
