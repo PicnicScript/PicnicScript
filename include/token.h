@@ -1,5 +1,5 @@
+#ifndef PICNIC_TOKEN_H
 #define PICNIC_TOKEN_H
-#ifdef PICNIC_TOKEN_H
 #include <stdlib.h>
 enum _TokenType {
     INST, 
