@@ -20,7 +20,8 @@ int main(int argc, char** argv){
             return 1;
 
             for(int i=0;i< tokens.ptr; i++){
-                
+                Token* t = token_list_get(&tokens, i);
+                printf("%d, %d, %d\n", t->type, t->data, t->line);
             }
             free(source);
         }
