@@ -16,6 +16,9 @@ ParserStatus parser_start(TokenList* list, const char* source)
         }
         lex[lexi] = '\0';
 
+        if(lex[0] == '\n'){
+            break;
+        }
         //CREATION OF A NUMERICAL SENTENCE
         if(lex[0] == '#'){
             int num = parser_get_number(lex);
