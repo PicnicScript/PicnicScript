@@ -1,4 +1,4 @@
-# Picnic VM Spec
+# PicnicScript Specs
 
 ## Symbols
 
