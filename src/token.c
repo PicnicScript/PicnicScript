@@ -11,10 +11,16 @@ void token_destroy(Token* tok){
     free(tok);
 }
 
+void token_list_create(TokenList* list, int size){
+    list->data = (Token**) malloc(sizeof(Token*) * size);
+    list->ptr=0;
+    list->size = size;
+}
+
 void token_list_add(TokenList* list, Token* tok){
     if(list -> ptr >=list -> size){
         list -> size *= 2;
-        list -> data = (Token**) realloc(list -> data, sizeof(Token**) * list -> size);
+        list -> data = (Token**) realloc(list -> data, sizeof(Token*) * list -> size);
     }
    list -> data[list->ptr++] = tok;
 }
