@@ -12,9 +12,9 @@
 
 # Stats
 
-+`Created Date`: 4th Of May, 2021
-+`Developers`: 1
-+`Written in`: C
-+`Makefile`: MakeFile
-+`Compiler`: mingw32
-+`Platform`: Windows
++ `Created Date`: 4th Of May, 2021
++ `Developers`: 1
++ `Written in`: C
++ `Makefile`: MakeFile
++ `Compiler`: mingw32
++ `Platform`: Windows
